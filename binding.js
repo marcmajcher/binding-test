@@ -4,8 +4,8 @@
 
 (() => {
     const dataObj = {
-        firstName: '',
-        lastName: ''
+        firstName: 'First',
+        lastName: 'Last'
     };
 
     function updateView(key, value) {
