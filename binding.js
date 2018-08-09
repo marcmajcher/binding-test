@@ -17,9 +17,9 @@
     }
 
     function updateInput(event) {
-        setData('firstName', event.target.value);
+        setData(event.target.id, event.target.value);
     }
 
-    const fnInput = document.getElementById('firstName');
-    fnInput.addEventListener('keydown', updateInput);
+    document.getElementById('firstName').addEventListener('keydown', updateInput);
+    document.getElementById('lastName').addEventListener('keydown', updateInput);
 })();
