@@ -20,6 +20,6 @@
         setData(event.target.id, event.target.value);
     }
 
-    document.getElementById('firstName').addEventListener('keydown', updateInput);
-    document.getElementById('lastName').addEventListener('keydown', updateInput);
+    document.getElementById('firstName').addEventListener('keyup', updateInput);
+    document.getElementById('lastName').addEventListener('keyup', updateInput);
 })();
