@@ -4,14 +4,20 @@
 
 (() => {
     const dataObj = {
-        firstName: '';
+        firstName: ''
     };
-    
-    const outputDiv = document.getElementById('nameHere');
+
+    function updateView(key, value) {
+        document.getElementById(`${key}View`).innerText = value;
+    }
+
+    function setData(key, value) {
+        dataObj[key] = value;
+        updateView(key, value);
+    }
 
     function updateInput(event) {
-        console.log(event.target.value);
-        outputDiv.innerText = event.target.value;
+        setData('firstName', event.target.value);
     }
 
     const fnInput = document.getElementById('firstName');
